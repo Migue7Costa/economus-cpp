@@ -10,12 +10,15 @@ namespace economus_cpp.Models
         public int id { get; set; }
 
         [Required(ErrorMessage = "Obrigatório inserir este campo")]
+        [Display(Name = "Nome")]
         public string nome { get; set; }
 
         [Required(ErrorMessage = "Obrigatório inserir este campo")]
+        [Display(Name = "E-mail")]
         public string email { get; set; }
 
         [Required(ErrorMessage = "Obrigatório inserir este campo")]
+        [Display(Name = "Senha")]
         public string senha { get; set; }
     }
 }
